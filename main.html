@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="Styles/styles.css">
+    </head>
+    <body>
+        <main id = "main">
+            <header>
+                <h1 id = "title">FreeCodeCamp Survey Form</h1>
+                <p id = "description">We appriciate your feedback!</p>
+            </header>
+        
+            <form id = "survey-form">
+                <div id = contact>
+                    <label id="name-label" for="name">Name: </label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Please enter your name"
+                            required
+                        />
+
+                    <label id="email-label" for="email">Email: </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Please enter your Email"
+                            required
+                        />
+
+                    <label id="number-label" for="number">Age: </label>
+                        <input
+                            type="number"
+                            name="age"
+                            id="number"
+                            min="10"
+                            max="99"
+                            placeholder="Please enter your age"
+                        />
+                </div>
+                
+                <p>What made you want to use FreeCodeCamp?</p>
+                <select id="dropdown" name="reason" required>
+                    <option disabled selected value>Select reason</option>
+                    <option value="furtherCareer">Further Career</option>
+                    <option value="careerChange">Career Change</option>
+                    <option value="personal">Personal Reasons</option>
+                    <option value="notSay">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <hr>
+
+                <div id="radio-div">
+                    <p>Would you recommend freeCodeCamp to a friend? (Select one)</p>
+                    <label>
+                        <input
+                        name="recommend"
+                        value="yes"
+                        type="radio"
+                        checked
+                        />Yes
+                    </label>
+
+                    <label>
+                        <input
+                        name="recommend"
+                        value="maybe"
+                        type="radio"
+                        />Maybe
+                    </label>
+
+                    <label>
+                        <input
+                        name="recommend"
+                        value="no"
+                        type="radio"
+                        />No
+                    </label>
+                </div>
+
+                <hr>
+                
+                <div id = "checkbox-div">
+                    <p>What is your favorite part of FreeCodeCamp? (Check all that apply)</p>
+            
+                    <label>
+                        <input
+                            name="favorite"
+                            value="projects"
+                            type="checkbox"
+                        />Projects
+                    </label>
+
+                    <label>
+                        <input
+                            name="favorite"
+                            value="lessons"
+                            type="checkbox"
+                        />Lessons
+                    </label>
+
+                    <label>
+                        <input
+                            name="favorite"
+                            value="community"
+                            type="checkbox"
+                        />The Community
+                    </label>
+
+                    <label>
+                        <input
+                            name="favorite"
+                            value="cost"
+                            type="checkbox"
+                        />Cost (Free)
+                    </label>
+                </div>
+                
+                <hr>
+
+                <p>Comments or suggestions?</p>
+                <textarea
+                    id="comments"
+                    name="comment"
+                    placeholder="Enter your comment here...">
+                </textarea>
+              
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </main>
+
+        <script src = https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+    </body>
+
+
+</html>
